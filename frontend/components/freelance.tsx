@@ -10,39 +10,22 @@ interface FreelanceProject {
   image: string
   skills: string[]
   link?: string
+  date: string
 }
 
 export default function Freelance() {
   const freelanceProjects: FreelanceProject[] = [
     {
-      id: "local-cafe-website",
-      title: "Local Café Website",
-      client: "Morning Brew Café",
+      id: "freelance1",
+      title: "Automated Sales Order ERP Integration",
+      client: "Rohrer Seeds",
       description:
-        "Designed and developed a responsive website for a local café, featuring online ordering, menu display, and event calendar.",
+        "Automates sales order processing using Azure AI Document Intelligence to extract data from physical orders, route them for client approval, and seamlessly upload validated orders into the ERP system.",
       image: "/placeholder.svg?height=400&width=600",
-      skills: ["Web Design", "Next.js", "Stripe Integration", "SEO"],
+      skills: ["Azure AI Document Intelligence", "Nesuite REST API", "Next.js", "AWS(Lambda, S3, Dynamo)", "OAuth2.0"],
       link: "https://morningbrewcafe.com",
-    },
-    {
-      id: "fitness-app",
-      title: "Fitness Tracking App",
-      client: "Personal Trainer Jane Smith",
-      description:
-        "Built a custom fitness tracking application for a personal trainer to manage client workouts, progress, and nutrition plans.",
-      image: "/placeholder.svg?height=400&width=600",
-      skills: ["React Native", "Firebase", "UX Design", "Health API Integration"],
-    },
-    {
-      id: "e-commerce-store",
-      title: "E-commerce Store",
-      client: "Handmade Crafts Shop",
-      description:
-        "Developed a full-featured e-commerce platform for a handmade crafts business, including inventory management and payment processing.",
-      image: "/placeholder.svg?height=400&width=600",
-      skills: ["Shopify", "Custom Theme Development", "Payment Gateway Integration", "Product Photography"],
-      link: "https://craftshop-example.com",
-    },
+      date: "June 2025 - August 2025",
+    }
   ]
 
   return (
@@ -72,9 +55,14 @@ export default function Freelance() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold">{project.title}</h3>
-                <p className="text-sm text-gray-500 mb-2">Client: {project.client}</p>
-                <p className="text-gray-600 mb-4 line-clamp-3">{project.description}</p>
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h3 className="text-xl font-bold">{project.title}</h3>
+                    <p className="text-sm text-gray-500">{project.date}</p>
+                  </div>
+
+                </div>
+                <p className="mt-2 text-gray-600 mb-4">{project.description}</p>
                 <div className="mb-4 flex flex-wrap gap-2">
                   {project.skills.map((skill, index) => (
                     <span
@@ -85,39 +73,9 @@ export default function Freelance() {
                     </span>
                   ))}
                 </div>
-                <div className="flex justify-between items-center">
-                  <Link
-                    href={`/freelance/${project.id}`}
-                    className="inline-flex items-center text-sm font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    View Details
-                    <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                  {project.link && (
-                    <Link
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-sm font-medium text-gray-900 hover:text-gray-700"
-                    >
-                      <ExternalLink className="mr-1 h-4 w-4" />
-                      Live Site
-                    </Link>
-                  )}
-                </div>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-12 flex justify-center">
-          <Link
-            href="/freelance"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-          >
-            View All Freelance Work
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
         </div>
       </div>
     </section>

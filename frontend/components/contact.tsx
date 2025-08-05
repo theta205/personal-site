@@ -1,104 +1,74 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
-import { Send } from "lucide-react"
+import { Mail, Linkedin } from "lucide-react"
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  })
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // In a real application, you would send this data to your backend
-    console.log("Form submitted:", formData)
-    alert("Thank you for your message! I'll get back to you soon.")
-    setFormData({ name: "", email: "", message: "" })
-  }
-
   return (
-    <section id="contact" className="py-16 md:py-24 bg-white">
+    <section id="contact" className="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Me</h2>
-            <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Have a question or want to work together? Feel free to reach out!
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">Get in Touch</h2>
+            <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Want to get in touch? Here's how you can reach me:
             </p>
           </div>
         </div>
 
-        <div className="mx-auto max-w-lg">
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid gap-2">
-              <label
-                htmlFor="name"
-                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        <div className="mx-auto max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Email Card */}
+            <div className="group flex flex-col items-center text-center p-8 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm transition-all hover:shadow-md hover:border-gray-300 dark:hover:border-gray-600">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gray-50 dark:bg-gray-700 group-hover:bg-gray-100 dark:group-hover:bg-gray-600 transition-colors mb-4">
+                <Mail className="h-7 w-7 text-gray-700 dark:text-gray-300" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Email Me</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Get in touch directly via email</p>
+              <a 
+                href="mailto:isaiahrohrer@gmail.com" 
+                className="inline-flex items-center text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white font-medium transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigator.clipboard.writeText('isaiahrohrer@gmail.com');
+                  alert('Email copied to clipboard!');
+                }}
               >
-                Name
-              </label>
-              <input
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                className="flex h-10 w-full rounded-md border border-gray-200 bg-white px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                placeholder="Your name"
-                required
-              />
+                isaiahrohrer@gmail.com
+              </a>
             </div>
-            <div className="grid gap-2">
-              <label
-                htmlFor="email"
-                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+
+            {/* LinkedIn Card */}
+            <div className="group flex flex-col items-center text-center p-8 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm transition-all hover:shadow-md hover:border-gray-300 dark:hover:border-gray-600">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gray-50 dark:bg-gray-700 group-hover:bg-gray-100 dark:group-hover:bg-gray-600 transition-colors mb-4">
+                <Linkedin className="h-7 w-7 text-gray-700 dark:text-gray-300" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Connect on LinkedIn</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Let's connect professionally</p>
+              <a
+                href="https://www.linkedin.com/in/isaiah-rohrer/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium transition-colors"
               >
-                Email
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="flex h-10 w-full rounded-md border border-gray-200 bg-white px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                placeholder="your.email@example.com"
-                required
-              />
+                View Profile
+                <svg
+                  className="ml-1 h-4 w-4"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </a>
             </div>
-            <div className="grid gap-2">
-              <label
-                htmlFor="message"
-                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                className="flex min-h-[120px] w-full rounded-md border border-gray-200 bg-white px-3 py-2 text-sm ring-offset-white placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                placeholder="Your message"
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className="inline-flex w-full items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-            >
-              <Send className="mr-2 h-4 w-4" />
-              Send Message
-            </button>
-          </form>
+          </div>
         </div>
       </div>
     </section>

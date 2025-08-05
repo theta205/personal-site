@@ -9,29 +9,23 @@ interface Hobby {
 export default function Hobbies() {
   const hobbies: Hobby[] = [
     {
-      title: "Photography",
+      title: "Riding Motorcycles",
       description:
-        "I enjoy landscape and street photography. On weekends, you'll often find me exploring new locations with my camera.",
-      icon: "/placeholder.svg?height=100&width=100",
+        "I've ridden my motorcycle from Florida to Pennsylvania and back. My favorite roads I've been on are the Tail of the Dragon, Blue Ridge Parkway, and North Carolina Highway 28.",
+      icon: "/moto.png",
     },
     {
-      title: "Rock Climbing",
+      title: "Traveling",
       description:
-        "I started bouldering two years ago and have been hooked ever since. I try to visit the climbing gym at least twice a week.",
-      icon: "/placeholder.svg?height=100&width=100",
+        "I love to travel, hike, and experience things I haven't done before. I've been to 20 states, but only one other country outside the US. In the next 5 years I want to visit over 10 countries.",
+      icon: "/travel.jpg",
     },
     {
-      title: "Reading",
+      title: "Sports",
       description:
-        "I'm an avid reader of science fiction and non-fiction books about technology, psychology, and personal development.",
-      icon: "/placeholder.svg?height=100&width=100",
-    },
-    {
-      title: "Cooking",
-      description:
-        "I love experimenting with recipes from different cuisines. My specialties are Italian pasta dishes and Thai curries.",
-      icon: "/placeholder.svg?height=100&width=100",
-    },
+        "I'm an avid sports fan. I enjoy watching college basketball and football as well as the NFL, NBA and MLB. I also enjoy playing pickup basketball.",
+      icon: "/fsu.webp",
+    }
   ]
 
   return (
@@ -46,14 +40,19 @@ export default function Hobbies() {
           </div>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {hobbies.map((hobby, index) => (
             <div
               key={index}
               className="flex flex-col items-center text-center p-6 rounded-lg border bg-white shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="relative h-20 w-20 mb-4">
-                <Image src={hobby.icon || "/placeholder.svg"} alt={hobby.title} fill className="object-contain" />
+              <div className="relative w-full h-48 mb-4">
+                <Image 
+                  src={hobby.icon || "/placeholder.svg"} 
+                  alt={hobby.title} 
+                  fill 
+                  className="object-cover rounded-t-lg"
+                />
               </div>
               <h3 className="text-xl font-bold mb-2">{hobby.title}</h3>
               <p className="text-gray-600">{hobby.description}</p>

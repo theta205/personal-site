@@ -10,10 +10,10 @@ export default function Hero() {
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                Hi, I'm Alex Chen
+                Hi, I'm Isaiah Rohrer
               </h1>
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                Junior Computer Science student at University of Technology, graduating in December 2026. Passionate
+                Junior Computer Science student at Florida State University, graduating in December 2026. Passionate
                 about building intuitive web applications and solving complex problems.
               </p>
             </div>
@@ -36,8 +36,8 @@ export default function Hero() {
           <div className="flex items-center justify-center">
             <div className="relative h-[300px] w-[300px] overflow-hidden rounded-full border-4 border-white shadow-xl">
               <Image
-                src="/placeholder.svg?height=600&width=600"
-                alt="Alex Chen"
+                src="/headshot.jpg"
+                alt="Isaiah Rohrer"
                 fill
                 className="object-cover"
                 priority

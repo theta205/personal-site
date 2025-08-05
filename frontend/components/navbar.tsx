@@ -11,7 +11,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-xl font-bold">Alex Chen</span>
+          <span className="text-xl font-bold">Isaiah Rohrer</span>
         </Link>
         <nav className="hidden md:flex gap-6">
           <Link href="/#about" className="text-sm font-medium hover:text-gray-900/70 transition-colors">

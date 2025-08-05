@@ -6,46 +6,49 @@ interface Project {
   title: string
   description: string
   techStack: string[]
-  githubUrl: string
+  githubUrl?: string
   liveUrl?: string
+  date: string
 }
 
 export default function Projects() {
   const projects: Project[] = [
     {
-      id: "budget-tracker",
-      title: "Personal Budget Tracker",
+      id: "studiz.ai",
+      title: "Studiz.ai",
       description:
-        "A web application that helps users track their expenses and income, with data visualization and budget planning features.",
-      techStack: ["React", "Node.js", "MongoDB", "Chart.js"],
-      githubUrl: "https://github.com/alexchen/budget-tracker",
-      liveUrl: "https://budget-tracker-demo.vercel.app",
+        "A web platform that enhances learning with AI-generated notes and a RAG-based chatbot for context-aware course assistance",
+      techStack: ["JavaScript/TypeScript","Next.js", "RAG (Retrieval Augmented Generation)","AWS(Lambda)", "Clerk", "AWS(S3, DynamoDB)","AWS(API Gateway)"],
+      //githubUrl: "",
+      liveUrl: "https://studiz.ai",
+      date: "May 2025 - Present",
     },
     {
-      id: "study-group-finder",
-      title: "Study Group Finder",
+      id: "myride",
+      title: "MyRide.show",
       description:
-        "Platform for university students to find and create study groups for their courses, featuring real-time chat and resource sharing.",
-      techStack: ["Next.js", "Firebase", "Tailwind CSS", "TypeScript"],
-      githubUrl: "https://github.com/alexchen/study-group-finder",
+        "A car profile page built in React for car enthusiasts to display their ride and its modifications. Similar to linktree but for cars.",
+      techStack: ["React", "Cloudflare KV", "JavaScript", "Clerk", "Cloudflare Workers and Pages", "Cloudinary"],
+      githubUrl: "https://github.com/theta205/myride",
+      liveUrl: "https://myride.show",
+      date: "September 2024 - November 2024",
     },
     {
-      id: "algorithm-visualizer",
-      title: "Algorithm Visualizer",
+      id: "lol-metric-elo",
+      title: "Aggregate Metric ELO",
       description:
-        "Interactive tool that visualizes various sorting and pathfinding algorithms, helping students understand how they work step by step.",
-      techStack: ["JavaScript", "HTML Canvas", "CSS", "Web Animations API"],
-      githubUrl: "https://github.com/alexchen/algorithm-visualizer",
-      liveUrl: "https://algorithm-viz-demo.vercel.app",
+        "Built a custom ELO ranking algorithm for Ranking System for League of Legends Esports that parsed 2TB+ of JSON match data across 600+ teams, improving tournament prediction accuracy by 20%",
+      techStack: ["JavaScript", "Python"],
+      githubUrl: "https://github.com/theta205/LoL-Metric-Elo-Rankings",
+      date: "October 2023",
     },
     {
-      id: "weather-dashboard",
-      title: "Weather Dashboard",
+      id: "storm-mode",
+      title: "Storm Mode",
       description:
-        "A responsive weather application that provides current conditions and forecasts based on user location or search queries.",
-      techStack: ["React", "OpenWeather API", "Styled Components", "Axios"],
-      githubUrl: "https://github.com/alexchen/weather-dashboard",
-      liveUrl: "https://weather-dash-demo.vercel.app",
+        "Won 2nd place at the FSU NextEra Hackathon by building a predictive analytics module for Florida Power & Light’s mobile app, providing real-time storm data to customers",
+      techStack: [],
+      date: "September 2023",
     },
   ]
 
@@ -56,7 +59,7 @@ export default function Projects() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Projects</h2>
             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Here are some of the projects I've worked on during my studies and in my free time.
+              Here are some of the projects I've worked on during my free time.
             </p>
           </div>
         </div>
@@ -67,8 +70,13 @@ export default function Projects() {
               className="group relative overflow-hidden rounded-lg border bg-white shadow-md transition-all hover:shadow-lg"
             >
               <div className="p-6">
-                <h3 className="text-xl font-bold">{project.title}</h3>
-                <p className="mt-2 text-gray-500 line-clamp-3">{project.description}</p>
+                <div className="flex justify-between items-start">
+                  <h3 className="text-xl font-semibold">{project.title}</h3>
+                  <span className="text-sm text-gray-500 px-2 py-1">
+                    {project.date}
+                  </span>
+                </div>
+                <p className="text-gray-500">{project.description}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {project.techStack.map((tech, techIndex) => (
                     <span
@@ -80,14 +88,7 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="mt-6 flex items-center gap-4">
-                  <Link
-                    href={`/projects/${project.id}`}
-                    className="inline-flex items-center text-sm font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    View Details
-                    <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                  <Link
+                 { project.githubUrl &&<Link
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -95,7 +96,7 @@ export default function Projects() {
                   >
                     <Github className="mr-1 h-4 w-4" />
                     GitHub
-                  </Link>
+                  </Link>}
                   {project.liveUrl && (
                     <Link
                       href={project.liveUrl}
@@ -111,15 +112,6 @@ export default function Projects() {
               </div>
             </div>
           ))}
-        </div>
-        <div className="mt-12 flex justify-center">
-          <Link
-            href="/projects"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-          >
-            View All Projects
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
         </div>
       </div>
     </section>

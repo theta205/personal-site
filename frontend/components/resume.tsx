@@ -24,40 +24,64 @@ export default function Resume() {
           </div>
         </div>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2">
-          <div>
-            <h3 className="text-xl font-bold mb-4">Education</h3>
-            <div className="space-y-4">
-              <div className="border-l-2 border-gray-200 pl-4">
-                <h4 className="text-lg font-semibold">Bachelor of Science in Computer Science</h4>
-                <p className="text-gray-500">University of Technology</p>
-                <p className="text-gray-500">Expected Graduation: December 2026</p>
-                <p className="text-gray-500">GPA: 3.8/4.0</p>
+        <div className="mt-16 grid gap-12 md:grid-cols-1">
+          {/* Education Section */}
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-gray-900">Education</h3>
+            <div className="space-y-6">
+              <div className="border-l-2 border-gray-200 pl-6 space-y-2">
+                <h4 className="text-lg font-semibold text-gray-900">Bachelor of Science in Computer Science</h4>
+                <p className="text-gray-700">Florida State University</p>
+                <p className="text-gray-600">Expected Graduation: December 2026</p>
+                <p className="text-gray-600">GPA: 3.87/4.0</p>
               </div>
             </div>
           </div>
 
-          <div>
-            <h3 className="text-xl font-bold mb-4">Skills</h3>
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <h4 className="font-semibold mb-2">Programming Languages</h4>
-                <ul className="list-disc list-inside text-gray-500 space-y-1">
-                  <li>JavaScript/TypeScript</li>
-                  <li>Python</li>
-                  <li>Java</li>
-                  <li>C++</li>
-                  <li>HTML/CSS</li>
+          {/* Skills Section */}
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-gray-900">Skills</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="bg-white p-4 rounded-lg shadow-sm">
+                <h4 className="font-semibold text-gray-900 mb-3">Programming Languages</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span>
+                    JavaScript/TypeScript
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span>
+                    Python
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span>
+                    C++
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span>
+                    HTML/CSS
+                  </li>
                 </ul>
               </div>
-              <div>
-                <h4 className="font-semibold mb-2">Technologies</h4>
-                <ul className="list-disc list-inside text-gray-500 space-y-1">
-                  <li>React/Next.js</li>
-                  <li>Node.js</li>
-                  <li>MongoDB</li>
-                  <li>Git</li>
-                  <li>Docker</li>
+              <div className="bg-white p-4 rounded-lg shadow-sm">
+                <h4 className="font-semibold text-gray-900 mb-3">Technologies</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span>
+                    React/Next.js
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span>
+                    AWS: Lambda, API Gateway, S3, DynamoDB
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span>
+                    Git
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span>
+                    Retrieval Augmented Generation (RAG)
+                  </li>
                 </ul>
               </div>
             </div>
