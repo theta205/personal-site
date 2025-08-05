@@ -55,7 +55,7 @@ frontend/
    ```
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🤝 Connect
+## Example
 
 Take a look at my site at www.isaiahrohrer.dev
 
