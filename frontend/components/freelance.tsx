@@ -21,7 +21,7 @@ export default function Freelance() {
       description:
         "Automated sales order processing using Azure AI Document Intelligence to extract data from physical orders, route them for client approval, and seamlessly upload validated orders into the ERP system.",
       image: "/freelance1.gif",
-      skills: ["Azure AI Document Intelligence", "Nesuite REST API", "Next.js", "AWS(Lambda, S3, Dynamo)", "OAuth2.0"],
+      skills: ["Azure AI Document Intelligence", "NetSuite REST API", "Next.js", "AWS(Lambda, S3, Dynamo)", "OAuth2.0"],
       link: "https://morningbrewcafe.com",
       date: "June 2025 - August 2025",
     }

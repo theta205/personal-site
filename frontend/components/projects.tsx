@@ -17,7 +17,7 @@ export default function Projects() {
       id: "studiz.ai",
       title: "Studiz.ai",
       description:
-        "A web platform that enhances learning with AI-generated notes and a RAG-based chatbot for context-aware course assistance",
+        "A web platform that enhances learning with AI-generated notes and a RAG-based chatbot for context-aware course assistance.",
       techStack: ["JavaScript/TypeScript","Next.js", "RAG (Retrieval Augmented Generation)","AWS(Lambda)", "Clerk", "AWS(S3, DynamoDB)","AWS(API Gateway)"],
       //githubUrl: "",
       liveUrl: "https://studiz.ai",
@@ -27,7 +27,7 @@ export default function Projects() {
       id: "myride",
       title: "MyRide.show",
       description:
-        "A car profile page built in React for car enthusiasts to display their ride and its modifications. Similar to linktree but for cars.",
+        "A car profile page built in React for car enthusiasts to display their ride and its modifications. Similar to Linktree, but for car enthusiasts.",
       techStack: ["React", "Cloudflare KV", "JavaScript", "Clerk", "Cloudflare Workers and Pages", "Cloudinary"],
       githubUrl: "https://github.com/theta205/myride",
       liveUrl: "https://myride.show",
@@ -37,7 +37,7 @@ export default function Projects() {
       id: "lol-metric-elo",
       title: "Aggregate Metric ELO",
       description:
-        "Built a custom ELO ranking algorithm for Ranking System for League of Legends Esports that parsed 2TB+ of JSON match data across 600+ teams, improving tournament prediction accuracy by 20%",
+        "Built a custom ELO ranking algorithm for League of Legends Esports, that parsed 2TB+ of JSON match data across 600+ teams, improving tournament prediction accuracy by 20%",
       techStack: ["JavaScript", "Python"],
       githubUrl: "https://github.com/theta205/LoL-Metric-Elo-Rankings",
       date: "October 2023",
@@ -46,7 +46,7 @@ export default function Projects() {
       id: "storm-mode",
       title: "Storm Mode",
       description:
-        "Won 2nd place at the FSU NextEra Hackathon by building a predictive analytics module for Florida Power & Light’s mobile app, providing real-time storm data to customers",
+        "Won 2nd place at the FSU NextEra Hackathon by building a predictive analytics module for Florida Power & Light’s mobile app, providing real-time storm data to customers.",
       techStack: [],
       date: "September 2023",
     },

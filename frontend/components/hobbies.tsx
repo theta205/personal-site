@@ -17,7 +17,7 @@ export default function Hobbies() {
     {
       title: "Traveling",
       description:
-        "I love to travel, hike, and experience things I haven't done before. I've been to 20 states, but only one other country outside the US. In the next 5 years I want to visit over 10 countries.",
+        "I love to travel, hike, and experience things I haven't done before. I’ve been to 20 states and one country outside the US. In the next 5 years I want to visit over 10 countries.",
       icon: "/travel.jpg",
     },
     {
