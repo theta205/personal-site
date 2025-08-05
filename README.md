@@ -9,14 +9,6 @@
 
 Welcome to my personal portfolio website! This site serves as a professional showcase of my work, skills, and journey as a Computer Science student at Florida State University. It's designed to provide visitors with a clean, modern, and responsive experience that highlights my projects, experience, and personality.
 
-## 🚀 Features
-
-- **Responsive Design**: Fully responsive layout that works on all devices
-- **Dark Mode**: Built-in dark theme with smooth transitions
-- **Project Showcase**: Detailed display of personal and freelance projects
-- **Interactive Elements**: Engaging UI components with hover effects and animations
-- **Modern Stack**: Built with the latest web technologies
-
 ## 🛠️ Technologies Used
 
 - **Frontend Framework**: [Next.js](https://nextjs.org/) (React)
@@ -64,13 +56,6 @@ frontend/
    ```
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🌈 Color Scheme
-
-- **Primary**: `#000000` (Black)
-- **Background**: `#FFFFFF` (Light) / `#111827` (Dark)
-- **Text**: `#1F2937` (Light) / `#F3F4F6` (Dark)
-- **Accent**: `#3B82F6` (Blue-500)
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -79,8 +64,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [GitHub](https://github.com/theta205)
 - [LinkedIn](https://linkedin.com/in/isaiah-rohrer)
-- [Email](mailto:isaiah.rohrer@gmail.com)
-
----
-
-Made with ❤️ by Isaiah Rohrer
