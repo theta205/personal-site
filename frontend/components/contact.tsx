@@ -25,15 +25,15 @@ export default function Contact() {
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Email Me</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">Get in touch directly via email</p>
               <a 
-                href="mailto:isaiahrohrer@gmail.com" 
+                href="mailto:isaiah.rohrer@gmail.com" 
                 className="inline-flex items-center text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white font-medium transition-colors"
                 onClick={(e) => {
                   e.preventDefault();
-                  navigator.clipboard.writeText('isaiahrohrer@gmail.com');
+                  navigator.clipboard.writeText('isaiah.rohrer@gmail.com');
                   alert('Email copied to clipboard!');
                 }}
               >
-                isaiahrohrer@gmail.com
+                isaiah.rohrer@gmail.com
               </a>
             </div>
 

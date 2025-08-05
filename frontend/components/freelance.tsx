@@ -20,8 +20,8 @@ export default function Freelance() {
       title: "Automated Sales Order ERP Integration",
       client: "Rohrer Seeds",
       description:
-        "Automates sales order processing using Azure AI Document Intelligence to extract data from physical orders, route them for client approval, and seamlessly upload validated orders into the ERP system.",
-      image: "/placeholder.svg?height=400&width=600",
+        "Automated sales order processing using Azure AI Document Intelligence to extract data from physical orders, route them for client approval, and seamlessly upload validated orders into the ERP system.",
+      image: "/freelance1.gif",
       skills: ["Azure AI Document Intelligence", "Nesuite REST API", "Next.js", "AWS(Lambda, S3, Dynamo)", "OAuth2.0"],
       link: "https://morningbrewcafe.com",
       date: "June 2025 - August 2025",
