@@ -9,7 +9,7 @@ import Footer from "@/components/footer"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}> {/* center better */}
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}> {/* center better */}
       <Navbar />
       <main>
         <Hero />

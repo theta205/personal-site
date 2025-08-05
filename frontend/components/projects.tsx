@@ -53,12 +53,12 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-16 md:py-24 bg-white">
+    <section id="projects" className="py-16 md:py-24 bg-white dark:bg-gray-900">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Projects</h2>
-            <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">Projects</h2>
+            <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Here are some of the projects I've worked on during my free time.
             </p>
           </div>
@@ -67,32 +67,32 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group relative overflow-hidden rounded-lg border bg-white shadow-md transition-all hover:shadow-lg"
+              className="group relative overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-md transition-all hover:shadow-lg dark:shadow-gray-800/20"
             >
               <div className="p-6">
                 <div className="flex justify-between items-start">
-                  <h3 className="text-xl font-semibold">{project.title}</h3>
-                  <span className="text-sm text-gray-500 px-2 py-1">
+                  <h3 className="text-xl font-semibold dark:text-white">{project.title}</h3>
+                  <span className="text-sm text-gray-500 dark:text-gray-400 px-2 py-1">
                     {project.date}
                   </span>
                 </div>
-                <p className="text-gray-500">{project.description}</p>
+                <p className="text-gray-500 dark:text-gray-300">{project.description}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {project.techStack.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800"
+                      className="inline-flex items-center rounded-full bg-gray-100 dark:bg-gray-700 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:text-gray-200"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
                 <div className="mt-6 flex items-center gap-4">
-                 { project.githubUrl &&<Link
+                 {project.githubUrl && <Link
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-sm font-medium text-gray-900 hover:text-gray-700"
+                    className="inline-flex items-center text-sm font-medium text-gray-900 dark:text-gray-200 hover:text-gray-700 dark:hover:text-white"
                   >
                     <Github className="mr-1 h-4 w-4" />
                     GitHub
@@ -102,7 +102,7 @@ export default function Projects() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-sm font-medium text-gray-900 hover:text-gray-700"
+                      className="inline-flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
                     >
                       <ExternalLink className="mr-1 h-4 w-4" />
                       Live Demo

@@ -29,12 +29,12 @@ export default function Hobbies() {
   ]
 
   return (
-    <section id="hobbies" className="py-16 md:py-24 bg-white">
+    <section id="hobbies" className="py-16 md:py-24 bg-white dark:bg-gray-900">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Hobbies & Interests</h2>
-            <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">Hobbies & Interests</h2>
+            <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               When I'm not coding, here's what you might find me doing.
             </p>
           </div>
@@ -44,18 +44,18 @@ export default function Hobbies() {
           {hobbies.map((hobby, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center p-6 rounded-lg border bg-white shadow-sm hover:shadow-md transition-shadow"
+              className="flex flex-col items-center text-center p-6 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm hover:shadow-md dark:shadow-gray-800/20 transition-shadow"
             >
               <div className="relative w-full h-48 mb-4">
                 <Image 
                   src={hobby.icon || "/placeholder.svg"} 
-                  alt={hobby.title} 
+                  alt={hobby.title}
                   fill 
                   className="object-cover rounded-t-lg"
                 />
               </div>
-              <h3 className="text-xl font-bold mb-2">{hobby.title}</h3>
-              <p className="text-gray-600">{hobby.description}</p>
+              <h3 className="text-xl font-bold mb-2 dark:text-white">{hobby.title}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{hobby.description}</p>
             </div>
           ))}
         </div>
