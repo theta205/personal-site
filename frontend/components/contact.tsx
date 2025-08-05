@@ -10,7 +10,7 @@ export default function Contact() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">Get in Touch</h2>
             <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Want to get in touch? Here's how you can reach me:
+              Want to get in touch? Here&apos;s how you can reach me:
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function Contact() {
                 <Linkedin className="h-7 w-7 text-gray-700 dark:text-gray-300" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Connect on LinkedIn</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Let's connect professionally</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Let&apos;s connect professionally</p>
               <a
                 href="https://www.linkedin.com/in/isaiah-rohrer/"
                 target="_blank"

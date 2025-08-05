@@ -35,7 +35,7 @@ export default function Hobbies() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">Hobbies & Interests</h2>
             <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              When I'm not coding, here's what you might find me doing.
+              When I&apos;m not coding, here&apos;s what you might find me doing.
             </p>
           </div>
         </div>

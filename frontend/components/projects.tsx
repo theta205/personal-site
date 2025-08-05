@@ -1,4 +1,4 @@
-import { ExternalLink, Github, ArrowRight } from "lucide-react"
+import { ExternalLink, Github } from "lucide-react"
 import Link from "next/link"
 
 interface Project {
@@ -59,7 +59,7 @@ export default function Projects() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">Projects</h2>
             <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Here are some of the projects I've worked on during my free time.
+              Here are some of the projects I&apos;ve worked on during my free time.
             </p>
           </div>
         </div>

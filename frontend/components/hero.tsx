@@ -10,7 +10,7 @@ export default function Hero() {
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none dark:text-white">
-                Hi, I'm Isaiah Rohrer
+                Hi, I&apos;m Isaiah Rohrer
               </h1>
               <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl">
                 Junior Computer Science student at Florida State University, graduating in December 2026. Passionate

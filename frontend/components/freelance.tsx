@@ -1,5 +1,4 @@
-import { ExternalLink, ArrowRight } from "lucide-react"
-import Link from "next/link"
+// Remove unused imports
 import Image from "next/image"
 
 interface FreelanceProject {
@@ -35,7 +34,7 @@ export default function Freelance() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">Freelance Work</h2>
             <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Client projects I've completed as a freelance developer.
+              Here are some of the projects I&apos;ve worked on as a freelancer.
             </p>
           </div>
         </div>
