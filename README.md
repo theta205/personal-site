@@ -7,7 +7,7 @@
 
 ## 🌟 Overview
 
-Welcome to my personal portfolio website! This site serves as a professional showcase of my work, skills, and journey as a Computer Science student at Florida State University. It's designed to provide visitors with a clean, modern, and responsive experience that highlights my projects, experience, and personality.
+Welcome to my personal portfolio website! This site serves as a professional showcase of my work, skills hobbies, and journey as a Computer Science student at Florida State University.
 
 ## 🛠️ Technologies Used
 
@@ -33,14 +33,13 @@ frontend/
 │   ├── projects.tsx    # Personal projects
 │   └── resume.tsx      # Resume and skills section
 ├── public/             # Static assets
-└── styles/             # Global styles
 ```
 
 ## 🚀 Getting Started
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/personal-site.git
+   git clone https://github.com/theta205/personal-site.git
    cd personal-site
    ```
 
