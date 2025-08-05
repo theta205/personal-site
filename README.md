@@ -57,5 +57,9 @@ frontend/
 
 ## 🤝 Connect
 
+Take a look at my site at www.isaiahrohrer.dev
+
+## 🤝 Connect
+
 - [GitHub](https://github.com/theta205)
 - [LinkedIn](https://linkedin.com/in/isaiah-rohrer)
