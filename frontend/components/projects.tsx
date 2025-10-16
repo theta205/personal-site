@@ -24,6 +24,16 @@ export default function Projects() {
       date: "May 2025 - Present",
     },
     {
+      id: "wilson-algo",
+      title: "Wilson's Algorithm",
+      description:
+        "A C++ terminal application that implements Wilson’s Algorithm for generating perfect mazes — mazes with exactly one unique path between any two cells.",
+      techStack: ["C++"],
+      githubUrl: "https://github.com/theta205/wilsons-algo",
+     // liveUrl: "",
+      date: "October 2025",
+    },
+    {
       id: "myride",
       title: "MyRide.show",
       description:
