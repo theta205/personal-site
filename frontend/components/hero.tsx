@@ -13,7 +13,7 @@ export default function Hero() {
                 Hi, I&apos;m Isaiah Rohrer
               </h1>
               <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl">
-                Junior Computer Science student at Florida State University, graduating in December 2026. Passionate
+                Senior Computer Science student at Florida State University, graduating in May 2026. Passionate
                 about building intuitive web applications and solving complex problems.
               </p>
             </div>
