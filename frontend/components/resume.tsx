@@ -59,7 +59,7 @@ export default function Resume() {
                   </li>
                   <li className="flex items-center">
                     <span className="w-1.5 h-1.5 bg-gray-400 dark:bg-gray-400 rounded-full mr-2"></span>
-                    HTML/CSS
+                    Java
                   </li>
                 </ul>
               </div>
@@ -76,11 +76,15 @@ export default function Resume() {
                   </li>
                   <li className="flex items-center">
                     <span className="w-1.5 h-1.5 bg-gray-400 dark:bg-gray-400 rounded-full mr-2"></span>
-                    Git
+                    Git, GitHub, GitHub Actions
                   </li>
                   <li className="flex items-center">
                     <span className="w-1.5 h-1.5 bg-gray-400 dark:bg-gray-400 rounded-full mr-2"></span>
                     Retrieval Augmented Generation (RAG)
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-gray-400 dark:bg-gray-400 rounded-full mr-2"></span>
+                    Supabase, Vercel
                   </li>
                 </ul>
               </div>
