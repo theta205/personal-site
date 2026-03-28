@@ -14,6 +14,16 @@ interface Project {
 export default function Projects() {
   const projects: Project[] = [
     {
+      id: "curatyze",
+      title: "Curatyze",
+      description:
+        "A web platform for discovering, sharing, and curating products and product collections.",
+      techStack: ["TypeScript","Next.js", "PostgreSQL","Supabase", "Vercel"],
+      //githubUrl: "",
+      liveUrl: "https://curatyze.com",
+      date: "Feb 2026 - Present",
+    },
+    {
       id: "studiz.ai",
       title: "Studiz.ai",
       description:
@@ -21,7 +31,7 @@ export default function Projects() {
       techStack: ["JavaScript/TypeScript","Next.js", "RAG (Retrieval Augmented Generation)","AWS(Lambda)", "Clerk", "AWS(S3, DynamoDB)","AWS(API Gateway)"],
       //githubUrl: "",
       liveUrl: "https://studiz.ai",
-      date: "May 2025 - Present",
+      date: "May 2025 - Aug 2025",
     },
     {
       id: "wilson-algo",
